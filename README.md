@@ -38,6 +38,28 @@ cd k8-teraform
 terraform init
 ```
 
+- Deploying application in argoCD using helm:
+- Check whether the k8s installed.
+
+```
+kubectl
+kubectl cluster info
+kubectl get pods
+```
+- Install Helm and install argoCD CLI and ArgoCD UI using Helm
+
+```
+brew install helm
+```
+
+- Verify Helm installation:
+```
+helm version
+```
+- Helm uses repositories to store and distribute charts (packaged applications).
+```
+helm repo add stable https://charts.helm.sh/stable
+```
 
 
 
